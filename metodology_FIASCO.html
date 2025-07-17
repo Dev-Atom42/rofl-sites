@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiasco Academy - Профессиональное обучение методологии ФИАСКО</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px a title for your space:rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #a855f7;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            background-color: #f8fafc;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-xl mr-3">F</div>
+                <h1 class="text-xl font-bold text-gray-900">FIASCO<span class="text-purple-600">Academy</span></h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-600 hover:text-purple-600">О методологии</a>
+                <a href="#courses" class="nav-link text-gray-600 hover:text-purple-600">Курсы</a>
+                <a href="#benefits" class="nav-link text-gray-600 hover:text-purple-600">Преимущества</a>
+                <a href="#testimonials" class="nav-link text-gray-600 hover:text-purple-600">Отзывы</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-purple-600">Контакты</a>
+            </nav>
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <div class="hidden md:block">
+                <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                    Записаться
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Освойте методологию <span class="underline decoration-yellow-300">ФИАСКО</span> и измените подход к управлению проектами</h1>
+                <p class="text-xl mb-8 opacity-90">Научитесь превращать неудачи в успех с помощью проверенной системы управления проектами и процессами.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition duration-300">
+                        Начать обучение
+                    </button>
+                    <button class="border-2 border-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-full font-bold transition duration-300">
+                        Узнать больше
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Обучение ФИАСКО" 
+                     class="rounded-xl shadow-2xl max-w-md w-full floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Что такое методология <span class="text-purple-600">ФИАСКО</span>?</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">ФИАСКО — это инновационная методология управления проектами, которая учит извлекать ценные уроки из неудач и трансформировать их в успешные стратегии.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl card-hover transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Философия неудачи</h3>
+                    <p class="text-gray-600">Учим воспринимать неудачи как ценный опыт и источник инноваций, а не как поражение.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl card-hover transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-project-diagram text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Инструменты анализа</h3>
+                    <p class="text-gray-600">Освойте мощные инструменты для анализа причин неудач и предотвращения их в будущем.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl card-hover transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Стратегии успеха</h3>
+                    <p class="text-gray-600">Превращайте извлеченные уроки в конкурентные преимущества и стратегии роста.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Наши <span class="text-purple-600">курсы</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Выберите программу обучения, соответствующую вашим целям и уровню подготовки.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-baby text-purple-600 text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold">Базовый курс</h3>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Новичкам</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Основы методологии ФИАСКО для начинающих. Идеально для тех, кто только знакомится с концепцией.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>8 модулей обучения</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>5 практических кейсов</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>Доступ к сообществу</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">9,900 ₽</span>
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full text-sm font-medium transition duration-300">
+                                Записаться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-user-graduate text-purple-600 text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold">Профессиональный курс</h3>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Популярный</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Глубокое погружение в методологию с разбором сложных кейсов и разработкой стратегий.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>12 модулей обучения</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>10 практических кейсов</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>Персональный ментор</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">24,900 ₽</span>
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full text-sm font-medium transition duration-300">
+                                Записаться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-briefcase text-purple-600 text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold">Корпоративное обучение</h3>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Для команд</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">Обучение для организаций с адаптацией методологии под специфику вашего бизнеса.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>Индивидуальная программа</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>Обучение для всей команды</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-500 mr-2"></i>
+                                <span>Годовое сопровождение</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">От 99,900 ₽</span>
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full text-sm font-medium transition duration-300">
+                                Обсудить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Преимущества <span class="text-purple-600">обучения</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Почему стоит выбрать нашу академию для освоения методологии ФИАСКО</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8 flex">
+                        <div class="mr-6">
+                            <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-chalkboard-teacher text-purple-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Практикующие эксперты</h3>
+                            <p class="text-gray-600">Наши преподаватели — практики с многолетним опытом применения методологии в реальных проектах.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8 flex">
+                        <div class="mr-6">
+                            <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-laptop-code text-purple-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Интерактивное обучение</h3>
+                            <p class="text-gray-600">Используем современные платформы с интерактивными заданиями, кейсами и симуляциями.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="mr-6">
+                            <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-network-wired text-purple-600 text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Сообщество единомышленников</h3>
+                            <p class="text-gray-600">Доступ к закрытому сообществу выпускников и экспертов для обмена опытом и нетворкинга.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                         alt="Преимущества обучения" 
+                         class="rounded-xl shadow-xl w-full">
+                    <div class="absolute -bottom-6 -right-6 bg-purple-600 text-white p-6 rounded-xl shadow-lg max-w-xs">
+                        <h4 class="font-bold mb-2">95% выпускников</h4>
+                        <p class="text-sm">отмечают значительное улучшение в управлении проектами после прохождения курса</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Отзывы <span class="text-purple-600">выпускников</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Что говорят о наших курсах те, кто уже прошел обучение</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-purple-100 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Анна Смирнова" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Анна Смирнова</h4>
+                            <p class="text-purple-600 text-sm">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"После прохождения курса полностью изменился мой подход к управлению проектами. Теперь я вижу в неудачах возможности, а не проблемы."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-purple-100 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Дмитрий Иванов" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Дмитрий Иванов</h4>
+                            <p class="text-purple-600 text-sm">Startup Founder</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Методология ФИАСКО помогла моей команде сократить количество ошибок на 40% и значительно ускорить процесс разработки продукта."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full bg-purple-100 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Елена Петрова" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Елена Петрова</h4>
+                            <p class="text-purple-600 text-sm">Team Lead</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Лучшая инвестиция в мое профессиональное развитие за последние годы. Теперь вся моя команда работает по принципам ФИАСКО."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Готовы изменить подход к управлению проектами?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Присоединяйтесь к тысячам профессионалов, которые уже освоили методологию ФИАСКО и добились выдающихся результатов.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition duration-300">
+                    Выбрать курс
+                </button>
+                <button class="border-2 border-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-full font-bold transition duration-300">
+                    Консультация
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Свяжитесь с <span class="text-purple-600">нами</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Остались вопросы? Напишите нам, и мы с радостью на них ответим.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Ваше имя</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Сообщение</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-gray-50 p-8 rounded-xl">
+                        <h3 class="text-xl font-bold mb-6">Контактная информация</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Адрес</h4>
+                                    <p class="text-gray-600">Москва, ул. Проектная, 15, офис 304</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-envelope text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Email</h4>
+                                    <p class="text-gray-600">info@fiasco-academy.ru</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-phone-alt text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Телефон</h4>
+                                    <p class="text-gray-600">+7 (495) 123-45-67</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-clock text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Часы работы</h4>
+                                    <p class="text-gray-600">Пн-Пт: 9:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-4">Мы в соцсетях</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Часто задаваемые <span class="text-purple-600">вопросы</span></h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="faq-toggle w-full flex justify-between items-center text-left">
+                            <h3 class="font-bold text-lg">Для кого подходят ваши курсы?</h3>
+                            <i class="fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600">Наши курсы подходят для менеджеров проектов, руководителей отделов, предпринимателей и всех, кто хочет улучшить свои навыки управления проектами и процессами. Мы предлагаем программы разного уровня сложности — от новичков до опытных специалистов.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="faq-toggle w-full flex justify-between items-center text-left">
+                            <h3 class="font-bold text-lg">Как проходит обучение?</h3>
+                            <i class="fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600">Обучение проходит онлайн на нашей образовательной платформе. Вы получаете доступ к видеоурокам, практическим заданиям, тестам и дополнительным материалам. Также предусмотрены вебинары с преподавателями и разборы домашних заданий. Для корпоративных клиентов возможны очные форматы.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="faq-toggle w-full flex justify-between items-center text-left">
+                            <h3 class="font-bold text-lg">Какой срок доступа к материалам курса?</h3>
+                            <i class="fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600">Доступ к материалам курса предоставляется на 12 месяцев с момента начала обучения. Этого времени достаточно, чтобы не только пройти курс, но и вернуться к нужным материалам для повторения. Для корпоративных клиентов возможны индивидуальные условия.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="faq-toggle w-full flex justify-between items-center text-left">
+                            <h3 class="font-bold text-lg">Выдаете ли вы сертификаты?</h3>
+                            <i class="fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600">Да, после успешного завершения курса и выполнения всех практических заданий вы получаете именной сертификат FIASCO Academy, подтверждающий вашу квалификацию. Сертификат доступен в электронном виде и может быть добавлен в ваш LinkedIn профиль.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <button class="faq-toggle w-full flex justify-between items-center text-left">
+                            <h3 class="font-bold text-lg">Есть ли возможность оплаты в рассрочку?</h3>
+                            <i class="fas fa-chevron-down text-purple-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content mt-4 hidden">
+                            <p class="text-gray-600">Да, мы сотрудничаем с несколькими банками и предлагаем возможность оплаты курса в рассрочку на срок до 12 месяцев без переплат. Подробные условия можно уточнить у наших менеджеров.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-lg mr-3">F</div>
+                        <h3 class="text-xl font-bold">FIASCO<span class="text-purple-400">Academy</span></h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Профессиональное обучение методологии ФИАСКО для управления проектами и процессами.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Курсы</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Базовый курс</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Профессиональный курс</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Корпоративное обучение</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Индивидуальные консультации</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Компания</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">О нас</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Преподаватели</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Отзывы</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Контакты</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-purple-400 mr-2"></i>
+                            <span class="text-gray-400">Москва, ул. Проектная, 15</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-purple-400 mr-2"></i>
+                            <span class="text-gray-400">+7 (495) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-purple-400 mr-2"></i>
+                            <span class="text-gray-400">info@fiasco-academy.ru</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 FIASCO Academy. Все права защищены.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Политика конфиденциальности</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Mobile menu toggle (would need implementation)
+        // Form submission handling (would need implementation)
+    </script>
+</body>
+</html>
