@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы фиаско имени Wojak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes wojakSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .wojak-spin {
+            animation: wojakSpin 5s linear infinite;
+        }
+        .glow-text {
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+        }
+        .blood-drip {
+            position: relative;
+        }
+        .blood-drip::after {
+            content: "🩸";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 py-32 relative z-10 text-center">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 glow-text">
+                ГОСУДАРСТВЕННЫЕ КУРСЫ <span class="text-red-500">ФИАСКО</span>
+            </h1>
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                Имени Великого <span class="blood-drip">Wojak</span>
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Утверждено Министерством Правды
+            </p>
+            <div class="flex justify-center gap-4">
+                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-lg transition-all transform hover:scale-105">
+                    ЗАПИСАТЬСЯ НА КУРС
+                </button>
+                <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-all transform hover:scale-105">
+                    УЗНАТЬ ПОДРОБНЕЕ
+                </button>
+            </div>
+        </div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 wojak-spin opacity-20">
+            <img src="https://i.kym-cdn.com/photos/images/original/001/297/318/4e0.png" alt="Wojak" class="w-64 h-64">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://i.imgflip.com/4/1bij.jpg" alt="Wojak teaching" class="rounded-lg shadow-2xl border-4 border-red-500 transform rotate-2 hover:rotate-0 transition-transform">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">О наших курсах</h2>
+                    <p class="text-lg mb-6">
+                        В соответствии с Указом №1488 Великого Wojak, каждый гражданин обязан освоить искусство фиаско. Наши курсы разработаны ведущими специалистами Министерства Правды и одобрены лично Wojak'ом.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                            <span>100% гарантия освоения техники фиаско</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                            <span>Государственный сертификат международного образца</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                            <span>Возможность карьерного роста до Мастера Фиаско</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gray-700 p-4 rounded-lg border-l-4 border-red-500">
+                        <p class="italic">
+                            "Фиаско — это не просто техника, это образ жизни. Освоив его, ты обретёшь истинную свободу." — Великий Wojak
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center">Наши программы</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Course -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
+                    <div class="bg-red-600 p-4 text-center">
+                        <h3 class="text-2xl font-bold">БАЗОВЫЙ КУРС</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xl font-bold mb-4">"Основы фиаско"</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-red-400 mr-2 mt-1"></i>
+                                <span>Теория фиаско</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-red-400 mr-2 mt-1"></i>
+                                <span>Практические занятия</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-red-400 mr-2 mt-1"></i>
+                                <span>История фиаско</span>
+                            </li>
+                        </ul>
+                        <p class="text-3xl font-bold mb-4">9 999 ₽</p>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition-all">
+                            ЗАПИСАТЬСЯ
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Advanced Course -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl border-2 border-yellow-400">
+                    <div class="bg-yellow-500 p-4 text-center">
+                        <h3 class="text-2xl font-bold text-gray-900">ПРОДВИНУТЫЙ КУРС</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xl font-bold mb-4">"Фиаско для профи"</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-400 mr-2 mt-1"></i>
+                                <span>Продвинутые техники</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-400 mr-2 mt-1"></i>
+                                <span>Фиаско в экстремальных условиях</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-400 mr-2 mt-1"></i>
+                                <span>Секретные методики Wojak'а</span>
+                            </li>
+                        </ul>
+                        <p class="text-3xl font-bold mb-4">19 999  ₽</p>
+                        <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded transition-all">
+                            ЗАПИСАТЬСЯ
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- VIP Course -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
+                    <div class="bg-purple-600 p-4 text-center">
+                        <h3 class="text-2xl font-bold">VIP КУРС</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-xl font-bold mb-4">"Фиаско с Wojak'ом"</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-400 mr-2 mt-1"></i>
+                                <span>Личные тренировки с Wojak'ом</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-400 mr-2 mt-1"></i>
+                                <span>Эксклюзивные техники</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-400 mr-2 mt-1"></i>
+                                <span>Звание "Мастер Фиаско"</span>
+                            </li>
+                        </ul>
+                        <p class="text-3xl font-bold mb-4">99 999  ₽</p>
+                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition-all">
+                            ЗАПИСАТЬСЯ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center">Отзывы выпускников</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.kym-cdn.com/entries/icons/original/000/026/152/gigachad.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Чад</p>
+                            <p class="text-gray-400">Выпускник VIP курса</p>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "После курсов фиаско с Wojak'ом моя жизнь изменилась. Теперь я могу фиаскировать в любых условиях. 10/10, рекомендую!"
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/297/314/8e1.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Сожалеющий Войак</p>
+                            <p class="text-gray-400">Выпускник базового курса</p>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "Я думал, что уже умею фиаскировать, но на курсах узнал столько нового! Особенно понравился раздел 'Фиаско при депрессии'."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/297/317/9e3.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Уверенный Войак</p>
+                            <p class="text-gray-400">Выпускник продвинутого курса</p>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "Теперь я фиаскирую на работе, дома, даже в общественном транспорте. Коллеги в восторге! Спасибо Великому Wojak'у!"
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold mb-16 text-center">Частые вопросы</h2>
+            
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleFAQ(1)">
+                        <span class="text-xl font-bold">Это обязательно?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300" id="faq-icon-1"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="faq-answer-1">
+                        <p>Да, согласно Указу №1488 Великого Wojak, каждый гражданин Швейцарии обязан пройти курсы фиаско. Уклонение карается дополнительными курсами.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleFAQ(2)">
+                        <span class="text-xl font-bold">Можно ли освоить фиаско самостоятельно?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300" id="faq-icon-2"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="faq-answer-2">
+                        <p>Теоретически можно, но без сертификата государственного образца ваше фиаско не будет признано законным. Кроме того, вы рискуете освоить технику неправильно, что может привести к печальным последствиям.</p>
+                    </div>
+                </div>
+                
+                <!-- Question 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleFAQ(3)">
+                        <span class="text-xl font-bold">Есть ли возрастные ограничения?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300" id="faq-icon-3"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="faq-answer-3">
+                        <p>Курсы фиаско обязательны для граждан от 14 лет. Для детей 7-13 лет предусмотрена программа "Фиаско для самых маленьких".</p>
+                    </div>
+                </div>
+                
+                <!-- Question 4 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left" onclick="toggleFAQ(4)">
+                        <span class="text-xl font-bold">Что если у меня не получится?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300" id="faq-icon-4"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="faq-answer-4">
+                        <p>Это будет расценено как саботаж. В таком случае вам будет назначен дополнительный курс "Фиаско для безнадёжных" с тройной оплатой.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-red-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">ГОТОВЫ НАЧАТЬ СВОЁ ПУТЕШЕСТВИЕ В МИР ФИАСКО?</h2>
+            <p class="text-xl mb-12 max-w-3xl mx-auto">
+                Запишитесь на курсы прямо сейчас и получите бонус — методичку "100 способов фиаско в быту" от лично Wojak'а!
+            </p>
+            <button class="bg-white text-red-900 hover:bg-gray-200 font-bold py-4 px-8 rounded-full text-xl transition-all transform hover:scale-105 shadow-lg">
+                ЗАПИСАТЬСЯ СЕЙЧАС
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">Курсы фиаско имени Wojak</h3>
+                    <p class="text-gray-400">Одобрено Министерством Правды</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-xl">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
+                <p>© 2023 Государственные курсы фиаско имени Wojak. Все права защищены.</p>
+                <p class="mt-2 text-sm">Любая критика курсов будет рассматриваться как антигосударственная деятельность.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(num) {
+            const answer = document.getElementById(`faq-answer-${num}`);
+            const icon = document.getElementById(`faq-icon-${num}`);
+            
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+    </script>
+</body>
+</html>
